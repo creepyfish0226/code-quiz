@@ -1,35 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Code Quiz</title>
-  </head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>Code Quiz</title>
+</head>
+
+<body>
+
   <body>
-    <body>
-        <div class="container">
-            <div class="jumbotron">
-                <h1 class="display-4">Welcome to the Quiz</h1> <br>
-                <p class="lead">Click the start button to begin the quiz!</p> <br>
-                <hr class="my-4">
-                <a class="btn btn-primary btn-lg" id="start" href="#" role="button">Start</a>
-            </div>
-           
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-3" id="timer"></div>
+      </div>
+      <div class="jumbotron" id="startScreen">
+        <h1 class="display-4">Welcome to the Quiz</h1> <br>
+        <p class="lead">Click the start button to begin the quiz!</p> <br>
+        <hr class="my-4">
+        <button class="btn btn-primary btn-lg" id="start" role="button">Start</button>
+      </div>
+      <div class="jumbotron d-none" id="gameScreen">
+        <h1 class="display-4">Quiz</h1> <br>
+        <p class="lead" id="question"></p> <br>
+        <hr class="my-4">
+        <div id="answers"></div>
+      </div>
+      <div class="jumbotron d-none" id="endScreen" >
+        <h1 class="display-4">Game Over!</h1> <br>
+        <p class="lead">Put you intials in to be put on highscore page</p> <br>
+        <hr class="my-4">
+        <input type="text" id="initials">
+        <button class="btn btn-primary btn-lg" id="save" role="button">Submit</button>
+      </div>
 
 
+    </div>
 
-            </div>
-    
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
     <script src="assets/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
+
 </html>
